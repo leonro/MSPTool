@@ -348,6 +348,7 @@ class mspdata (object):
             else:
                 if stats:
                     print "rejected: %20s%6.0f%6.0f%6.2f%6.2f%6.2f%6.2f%6.2f" % (sample, temp, ar[0][1], fraction, nrmdiff, trmdiff, m3frac, m4frac)
+                    results = [sample, temp, ar[0][1], fraction, nrmdiff, trmdiff, m3frac, m4frac]
                     resultlist = ['rejected']
                     resultlist.extend(results)
                 pass
